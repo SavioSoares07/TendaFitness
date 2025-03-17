@@ -303,6 +303,11 @@ img {
   width: 305px;
   background-color: var(--first-color-dark);
 }
+.home__movie video{
+  width: 500px;
+  height: 700px;
+  border-radius: 10px;
+}
 
 .home__img {
   display: block;
@@ -574,6 +579,7 @@ img {
   padding-top: 1rem;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .footer__logo,
@@ -673,7 +679,10 @@ img {
     padding: 7rem 0 0;
   }
   .home__container {
-    grid-template-columns: repeat(2, max-content);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
   }
   .home__title {
     margin: 0.75rem 0 1.25rem;
@@ -732,9 +741,6 @@ img {
   }
   .home__data {
     padding-top: 3rem;
-  }
-  .home__images {
-    transform: translateX(-9rem);
   }
   .home__img {
     width: 700px;
